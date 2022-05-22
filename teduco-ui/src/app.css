@@ -1,8 +1,8 @@
+*{
+    margin: 0;
+}
 .container {
     display: flex;
+    
 }
-
-.others{
-    flex: 4;
-    background-color: wheat;
-}
+ 

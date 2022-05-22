@@ -11,17 +11,17 @@ export default function Sidebar() {
           <ul className="sidebarList">
 
             <li className="sidebarListItem"> 
-            <HomeIcon />
-            Universities
+            <span class="sidebarIcon"><HomeIcon /> </span>  
+            Home
             </li>
 
             <li className="sidebarListItem"> 
-            <ArticleIcon />
-            Universities
+            <span class="sidebarIcon"><ArticleIcon />  </span>  
+            Applications
             </li>
 
             <li className="sidebarListItem"> 
-            <SchoolIcon />
+            <span class="sidebarIcon"><SchoolIcon />  </span>  
             Universities
             </li>
 
