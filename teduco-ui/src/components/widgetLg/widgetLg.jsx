@@ -11,7 +11,7 @@ export default function WidgetLg() {
         <tr className="widgetLgTr">
           <th className="widgetLgTh">Customer</th>
           <th className="widgetLgTh">Date</th>
-          <th className="widgetLgTh">Country</th>
+          <th className="widgetLgTh">Program</th>
           <th className="widgetLgTh">Status</th>
         </tr>
         <tr className="widgetLgTr">
@@ -24,7 +24,7 @@ export default function WidgetLg() {
             <span className="widgetLgName">Sinan Engin</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
-          <td className="widgetLgAmount">Kasımpaşa</td>
+          <td className="widgetLgAmount">Informatik</td>
           <td className="widgetLgStatus">
             <Button type="Approved" />
           </td>
@@ -39,7 +39,7 @@ export default function WidgetLg() {
             <span className="widgetLgName">Sinan Engin</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
-          <td className="widgetLgAmount">Kasımpaşa</td>
+          <td className="widgetLgAmount">Wirtschaftsinformatik</td>
           <td className="widgetLgStatus">
             <Button type="Declined" />
           </td>
@@ -54,7 +54,7 @@ export default function WidgetLg() {
             <span className="widgetLgName">Sinan Engin</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
-          <td className="widgetLgAmount">Kasımpaşa</td>
+          <td className="widgetLgAmount">Bioinformatik</td>
           <td className="widgetLgStatus">
             <Button type="Pending" />
           </td>
@@ -69,7 +69,7 @@ export default function WidgetLg() {
             <span className="widgetLgName">Sinan Engin</span>
           </td>
           <td className="widgetLgDate">2 Jun 2021</td>
-          <td className="widgetLgAmount">Kasımpaşa</td>
+          <td className="widgetLgAmount">Games Engineering</td>
           <td className="widgetLgStatus">
             <Button type="Approved" />
           </td>
