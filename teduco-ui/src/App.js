@@ -4,6 +4,7 @@ import {Route,Routes} from "react-router-dom"
 import UserList from "./pages/home/userList/UserList";
 import Topbar from "/Users/inanccan/teduco/teduco-ui/src/components/topbar/Topbar.jsx"
 import Sidebar from "/Users/inanccan/teduco/teduco-ui/src/components/sidebar/Sidebar.jsx"
+import NewUser from "/Users/inanccan/teduco/teduco-ui/src/pages/home/newUser/newUser.jsx";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/users" element={<UserList/>} />
+        <Route path="/newuser" element={<NewUser/>} />
       </Routes>
             </div>
 
