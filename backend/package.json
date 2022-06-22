@@ -1,7 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "Backend of Teduco",
   "main": "app.js",
   "scripts": {
     "test": "mocha"
@@ -11,4 +11,5 @@
   "dependencies": {
     "express": "^4.18.1"
   }
+
 }
