@@ -1,10 +1,10 @@
-import Home from "/Users/inanccan/teduco/teduco-ui/src/pages/home/home/Home.jsx"
+import Home from "./pages/home/home/Home.jsx"
 import "./app.css"
 import {Route,Routes} from "react-router-dom"
 import UserList from "./pages/home/userList/UserList";
-import Topbar from "/Users/inanccan/teduco/teduco-ui/src/components/topbar/Topbar.jsx"
-import Sidebar from "/Users/inanccan/teduco/teduco-ui/src/components/sidebar/Sidebar.jsx"
-import NewUser from "/Users/inanccan/teduco/teduco-ui/src/pages/home/newUser/newUser.jsx";
+import Topbar from "./components/topbar/Topbar.jsx"
+import Sidebar from "./components/sidebar/Sidebar.jsx"
+import NewUser from "./pages/home/newUser/newUser.jsx";
 
 function App() {
   return (
