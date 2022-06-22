@@ -17,7 +17,7 @@ app.use(
 app.get("/", function(req, res) {
     res.json({ info: "Test run" });
 })
-
+app.post('/users', db.addUser)
 app.get('/users', db.getUsers)
 
 app.listen(port, function() {
