@@ -11,6 +11,7 @@ import Signup from "./pages/home/newApplication/Signup.jsx";
 
 
 function App() {
+
   return (
     <div>
       <Topbar/>

@@ -2,13 +2,13 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 14.3
--- Dumped by pg_dump version 14.3
+-- Dumped from database version 14.2
+-- Dumped by pg_dump version 14.2
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
-SET client_encoding = 'SQL_ASCII';
+SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SELECT pg_catalog.set_config('search_path', '', false);
 SET check_function_bodies = false;
@@ -21,23 +21,23 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: users; Type: TABLE; Schema: public; Owner: me
+-- Name: accounts; Type: TABLE; Schema: public; Owner: sys_admin
 --
 
-CREATE TABLE public.users (
+CREATE TABLE public.accounts (
     id integer NOT NULL,
     name character varying(30),
     email character varying(30)
 );
 
 
-ALTER TABLE public.users OWNER TO me;
+ALTER TABLE public.accounts OWNER TO sys_admin;
 
 --
--- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: me
+-- Name: accounts_id_seq; Type: SEQUENCE; Schema: public; Owner: sys_admin
 --
 
-CREATE SEQUENCE public.users_id_seq
+CREATE SEQUENCE public.accounts_id_seq
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -46,41 +46,90 @@ CREATE SEQUENCE public.users_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_id_seq OWNER TO me;
+ALTER TABLE public.accounts_id_seq OWNER TO sys_admin;
 
 --
--- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: me
+-- Name: accounts_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: sys_admin
 --
 
-ALTER SEQUENCE public.users_id_seq OWNED BY public.users.id;
-
-
---
--- Name: users id; Type: DEFAULT; Schema: public; Owner: me
---
-
-ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq'::regclass);
+ALTER SEQUENCE public.accounts_id_seq OWNED BY public.accounts.id;
 
 
 --
--- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: me
+-- Name: users; Type: TABLE; Schema: public; Owner: teduco
 --
 
-COPY public.users (id, name, email) FROM stdin;
-1	Jerry	ger@sfesf.com
-2	awd	wad@gmail.com
+CREATE TABLE public.users (
+    id integer NOT NULL,
+    name text NOT NULL,
+    email text NOT NULL
+);
+
+
+ALTER TABLE public.users OWNER TO teduco;
+
+--
+-- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: teduco
+--
+
+ALTER TABLE public.users ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
+    SEQUENCE NAME public.users_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1
+);
+
+
+--
+-- Name: accounts id; Type: DEFAULT; Schema: public; Owner: sys_admin
+--
+
+ALTER TABLE ONLY public.accounts ALTER COLUMN id SET DEFAULT nextval('public.accounts_id_seq'::regclass);
+
+
+--
+-- Data for Name: accounts; Type: TABLE DATA; Schema: public; Owner: sys_admin
+--
+
+COPY public.accounts (id, name, email) FROM stdin;
 \.
 
 
 --
--- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: me
+-- Data for Name: users; Type: TABLE DATA; Schema: public; Owner: teduco
+--
+
+COPY public.users (id, name, email) FROM stdin;
+2	inanc	inanc@gmai.com
+\.
+
+
+--
+-- Name: accounts_id_seq; Type: SEQUENCE SET; Schema: public; Owner: sys_admin
+--
+
+SELECT pg_catalog.setval('public.accounts_id_seq', 1, false);
+
+
+--
+-- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: teduco
 --
 
 SELECT pg_catalog.setval('public.users_id_seq', 2, true);
 
 
 --
--- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: me
+-- Name: accounts accounts_pkey; Type: CONSTRAINT; Schema: public; Owner: sys_admin
+--
+
+ALTER TABLE ONLY public.accounts
+    ADD CONSTRAINT accounts_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: teduco
 --
 
 ALTER TABLE ONLY public.users

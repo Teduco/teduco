@@ -1,0 +1,41 @@
+.choice{
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    display:block;
+}
+
+
+
+input{
+    width: 60%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-weight: 800;
+    font-size: 28px ;
+    color: blue;
+    margin-top: 30px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+p{
+    font-size: 28px;
+    margin-left: 40px;
+}
+
+a{
+    text-decoration: none;}
+
+    a:link, a:visited {
+        color: black;
+    }
+    a:hover {
+        color: black;
+    }
+

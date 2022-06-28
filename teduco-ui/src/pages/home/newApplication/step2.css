@@ -1,0 +1,51 @@
+.choice{
+    font-weight: 800;
+    font-size: 40px;
+    margin-left: 40px;
+    margin-bottom: 60px;
+    display: block;
+}
+
+input{
+    width: 80%;
+    height: 50px;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    font-weight: 800;
+    font-size: 28px;
+    color:grey;
+    margin-top: 30px;
+}
+
+form{
+    margin-top: 50px;
+}
+
+.progress-bar{
+    width: 200px;
+}
+
+p{
+    font-size: 28px;
+    margin-left: 40px;
+    display: inline-block;
+}
+
+.progress-bar-label
+{
+    position: absolute;
+    right: 385px;
+    top: 400px;
+    font-size: large;
+    font-weight: 700;
+}
+
+.progress-bar-label
+{
+    position: absolute;
+    right: 330px;
+    top: 400px;
+    font-size: large;
+    font-weight: 700;
+}

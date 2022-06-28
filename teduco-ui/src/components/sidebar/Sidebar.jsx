@@ -2,10 +2,14 @@ import './sidebar.css'
 import HomeIcon from '@mui/icons-material/Home';
 import ArticleIcon from '@mui/icons-material/Article';
 import SchoolIcon from '@mui/icons-material/School';
+<<<<<<< HEAD
 import SettingsIcon from '@mui/icons-material/Settings';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import {Route,Routes, useNavigate} from "react-router-dom"
 
+=======
+import {Route,Routes, useNavigate} from "react-router-dom"
+>>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
 
 export default function Sidebar() {
   const navigate = useNavigate();
@@ -15,7 +19,11 @@ export default function Sidebar() {
   };
 
   const navigateToApplications = () => {
+<<<<<<< HEAD
     navigate('/newApplication');
+=======
+    navigate('/applications');
+>>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
   };
 
   const navigateToUniversities = () => {
@@ -36,9 +44,15 @@ export default function Sidebar() {
          <div className="sidebarMenu">
 
           <ul className="sidebarList">
+<<<<<<< HEAD
 
             <li onClick={navigateToHome} className="sidebarListItem"> 
             <span class="sidebarIcon"> <HomeIcon /> </span>
+=======
+            
+            <li onClick={navigateToHome} className="sidebarListItem"> 
+            <span class="sidebarIcon"><HomeIcon /> </span>  
+>>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
             Home
             </li>
 
@@ -47,6 +61,7 @@ export default function Sidebar() {
             Applications
             </li>
 
+<<<<<<< HEAD
             <li  className="sidebarListItem"> 
             <span class="sidebarIcon"><CalendarMonthIcon/>  </span>  
             Calender
@@ -59,6 +74,8 @@ export default function Sidebar() {
             </li>
 
 
+=======
+>>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
             <li onClick={navigateToUniversities} className="sidebarListItem"> 
             <span class="sidebarIcon"><SchoolIcon />  </span>  
             Universities
