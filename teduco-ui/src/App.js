@@ -7,11 +7,6 @@ import Sidebar from "./components/sidebar/Sidebar.jsx"
 import NewUser from "./pages/home/newUser/newUser.jsx";
 
 function App() {
-  const navigate = useNavigate();
-
-  const navigateToUsers = () => {
-    navigate('/users');
-  };
 
   return (
     <div>
