@@ -3,10 +3,14 @@ import HomeIcon from '@mui/icons-material/Home';
 import ArticleIcon from '@mui/icons-material/Article';
 import SchoolIcon from '@mui/icons-material/School';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import SettingsIcon from '@mui/icons-material/Settings';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import {Route,Routes, useNavigate} from "react-router-dom"
 
+=======
+import {Route,Routes, useNavigate} from "react-router-dom"
+>>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
 =======
 import {Route,Routes, useNavigate} from "react-router-dom"
 >>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
@@ -20,7 +24,11 @@ export default function Sidebar() {
 
   const navigateToApplications = () => {
 <<<<<<< HEAD
+<<<<<<< HEAD
     navigate('/newApplication');
+=======
+    navigate('/applications');
+>>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
 =======
     navigate('/applications');
 >>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
@@ -45,10 +53,13 @@ export default function Sidebar() {
 
           <ul className="sidebarList">
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             <li onClick={navigateToHome} className="sidebarListItem"> 
             <span class="sidebarIcon"> <HomeIcon /> </span>
 =======
+=======
+>>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
             
             <li onClick={navigateToHome} className="sidebarListItem"> 
             <span class="sidebarIcon"><HomeIcon /> </span>  
@@ -62,6 +73,7 @@ export default function Sidebar() {
             </li>
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             <li  className="sidebarListItem"> 
             <span class="sidebarIcon"><CalendarMonthIcon/>  </span>  
             Calender
@@ -74,6 +86,8 @@ export default function Sidebar() {
             </li>
 
 
+=======
+>>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
 =======
 >>>>>>> 6079c2cb7002138c119d8470cc0bbc1d330a01eb
             <li onClick={navigateToUniversities} className="sidebarListItem"> 
