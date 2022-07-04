@@ -4,7 +4,7 @@
   left: 0px;
   width: 100%;
   height: 50px; /* Using px here is better I think */
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.0);
   z-index: 2;
 }
   

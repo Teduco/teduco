@@ -1,6 +1,8 @@
 .home{
     flex: 6;
-    padding-top: 50px;
+    padding-top: 30px;
+    margin-left: 5px;
+    margin-right: 5px;
 } 
 
 *{
