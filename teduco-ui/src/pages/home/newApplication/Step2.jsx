@@ -2,7 +2,6 @@ import "./step2.css";
 import { Component } from "react";
 import { CircularProgressbar } from 'react-circular-progressbar';
 import "./progress-bar.css"
-const percentage = 76;
 const likelihood = "Good";
 
 export class Step2 extends Component {

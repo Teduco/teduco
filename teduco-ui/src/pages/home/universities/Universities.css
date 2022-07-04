@@ -1,0 +1,79 @@
+title{
+position: absolute;
+width: 477px;
+height: 42px;
+left: 19px;
+top: 47px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 110%;
+/* or 35px */
+color: #000000;
+}
+
+
+rectangle{
+position: absolute;
+width: 204px;
+height: 57px;
+left: 19px;
+top: 292px;
+
+background: #007500;
+border-radius: 0px 0px 9px 9px;
+}
+
+rectangle2{
+    position: absolute;
+    width: 204px;
+    height: 57px;
+    left: 257px;
+    top: 292px;
+    
+    background: #0000AE;
+    border-radius: 0px 0px 9px 9px;
+    }
+
+    rectangle3{
+        position: absolute;
+        width: 204px;
+        height: 57px;
+        left: 495px;
+        top: 292px;
+        
+        background: #0000AE;
+        border-radius: 0px 0px 9px 9px;
+        }
+    
+
+
+
+        first-image{
+position: absolute;
+width: 204px;
+height: 248px;
+left: 19px;
+top: 101px;
+border-radius: 9px;
+}
+
+#2{
+    position: absolute;
+width: 204px;
+height: 248px;
+left: 257px;
+top: 101px;
+border-radius: 9px;
+    }
+
+
+#3{
+    position: absolute;
+    width: 204px;
+    height: 248px;
+    left: 495px;
+    top: 101px;
+    border-radius: 9px;
+    }
