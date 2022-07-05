@@ -6,16 +6,15 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import {useNavigate} from "react-router-dom";
 
-
 export default function Sidebar() {
   const navigate = useNavigate();
 
-
+  const navigateToUsers = () => {
+    navigate('/user');
+  };
 
   const navigateToApplications = () => {
     navigate('/newApplication');
-    navigate('/applications');
-    navigate('/applications');
   };
 
   const navigateToUniversities = () => {
@@ -33,7 +32,7 @@ export default function Sidebar() {
           <span className="logo">teduco</span>
           </div>
          
-         <div className="sidebarMenu">
+        <div className="sidebarMenu">
 
           <ul className="sidebarList">
             <li onClick={navigateToHome} className="sidebarListItem"> 
@@ -46,19 +45,15 @@ export default function Sidebar() {
             Applications
             </li>
 
-
             <li  className="sidebarListItem"> 
             <span class="sidebarIcon"><CalendarMonthIcon/>  </span>  
             Calender
             </li>
 
-
             <li className="sidebarListItem"> 
             <span class="sidebarIcon"><SettingsIcon />   </span>  
             Settings
             </li>
-
-
 
             <li onClick={navigateToUniversities} className="sidebarListItem"> 
             <span class="sidebarIcon"><SchoolIcon />  </span>  
