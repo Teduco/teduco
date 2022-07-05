@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
 
 .cardInt{
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.icon-box{
+    display: flex;
+    align-items: center;
+}
+
+.sponsor-text{
     margin-left: 2px;
-    margin-top: 5px;
-    margin-bottom: 5px;
 }

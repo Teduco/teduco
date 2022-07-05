@@ -9,10 +9,6 @@ import {useNavigate} from "react-router-dom";
 export default function Sidebar() {
   const navigate = useNavigate();
 
-  const navigateToUsers = () => {
-    navigate('/user');
-  };
-
   const navigateToApplications = () => {
     navigate('/newApplication');
   };

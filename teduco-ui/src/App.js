@@ -9,14 +9,13 @@ import NewProduct from "./pages/home/newProduct/NewProduct.jsx";
 import User from "./pages/home/user/User.jsx";
 import Signup from "./pages/home/newApplication/Signup.jsx";
 import Universities from "./pages/home/universities/Universities.jsx";
-import CalendarPage from "./pages/home/CalendarPage/CalendarPage.jsx";
 
 
 function App() {
 
   return (
     <div>
-      <Topbar/>
+      <Topbar />
       <div className="container">
       <Sidebar/>
       <Routes>
@@ -26,13 +25,12 @@ function App() {
         <Route path="/newproduct" element={<NewProduct/>} />
         <Route path="/user" element={<User/>} />
         <Route path="/newApplication" element={<Signup/>} />
-        <Route path="/test" element={<CalendarPage/>} />
         <Route path="/universities" element={<Universities/>} />
 
-      </Routes>
-            </div>
+        </Routes>
+      </div>
 
-          </div>
+    </div>
   );
 }
 
