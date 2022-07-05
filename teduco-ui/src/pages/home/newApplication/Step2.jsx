@@ -8,6 +8,22 @@ let resultInt = 100;
 let resultText = "";
 
 export class Step2 extends Component {
+    constructor(props) {
+        super(props);
+      
+        this.state = {
+          inputValue: 0,
+          inputValue2: 0,
+          res: 0
+        };
+        this.handleChange = this.handleChange.bind(this);
+      };
+      
+      handleChange = (evt) => {
+        this.setState({ [evt.target.name]: parseInt(evt.target.value) });
+      }
+      
+      
     continue = e => {
         this.props.nextStep();
       };
@@ -15,6 +31,15 @@ export class Step2 extends Component {
   back = e => {
     this.props.prevStep();
   };
+
+  prob(a) {
+    if(a>80){return "Very Likely";}
+    if(a>60){return "Likely";}
+    if(a>40){return "Average";}
+    if(a>20){return "Unlikely";}
+    if(a<=20){return "Very Unlikely";}
+    
+  }
 
   birsen(Note_Average,Exam_Result) {
         let first,second;
@@ -63,11 +88,11 @@ export class Step2 extends Component {
         <form>
         <div className="choice" >
             <label>Note Average </label>
-            <input type="text" defaultValue={values.notes} onBlur={this.handleChange1} placeholder="82"></input>
+            <input type="text" name="inputValue"  onChange={this.handleChange} placeholder="82"></input>
         </div>
         <div className="choice">
             <label>AYT/TYT Result</label>
-            <input type="text" defaultValue={values.exam} onBlur={this.handleChange2} placeholder="382"></input>
+            <input type="text" name="inputValue2"   onChange={this.handleChange} placeholder="382"></input>
         </div>
 
         <div className="choice">
@@ -89,10 +114,10 @@ export class Step2 extends Component {
         <p  onClick={this.back} className="next">Back</p>
         <p  onClick={this.continue} className="next">Next</p>
         </form>
-
-        <CircularProgressbar value={resultInt} text={`${resultText}`} />
+        <div className="display-linebreak"> 
+        <CircularProgressbar maxValue={100} value={(this.state.inputValue * 5 + this.state.inputValue2)/10} text={`${this.prob((this.state.inputValue * 5 + this.state.inputValue2)/10)}`} />
         <label class="progress-bar-label">Probality of Admission</label>
-
+        </div>
        
        </div>
         )
