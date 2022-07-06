@@ -7,8 +7,8 @@ import { Grid, Typography } from '@material-ui/core'
 export default function Universities() {
   const navigate = useNavigate();
   
-  const navigateToApplications = () => {
-    navigate('/newApplication');
+  const toTUMInfo = () => {
+    navigate("/newApplication", { state: { uni: "TUM", program: "Informatik"} });
   };
 
     return (
@@ -26,11 +26,11 @@ export default function Universities() {
                 </Grid>
 
                 <Grid item xs={3}>
-                    <CardInt  onClick={navigateToApplications}  title="Wirtschaftsinformatik" text="Ludwig Maximilian University of Munich" uni="./lmu_info.jpg" clr="#00701a" />
+                    <CardInt   title="Wirtschaftsinformatik" text="Ludwig Maximilian University of Munich" uni="./lmu_info.jpg" clr="#00701a" />
                 </Grid>
 
                 <Grid item xs={3}>
-                    <CardInt onClick={navigateToApplications} title="Informatik" text="Technical University of Munich" uni="./tum_info.jpg" clr="#003c8f" />
+                    <CardInt  onClick={toTUMInfo} title="Informatik" text="Technical University of Munich" uni="./tum_info.jpg" clr="#003c8f" />
                 </Grid>
 
                 <Grid item xs={3}>
