@@ -1,5 +1,5 @@
 import CardInt from '../../../components/cardInt/cardInt'
-import './universities.css'
+import './Universities.css'
 import {useNavigate} from "react-router-dom";
 
 import { Grid, Typography } from '@material-ui/core'
