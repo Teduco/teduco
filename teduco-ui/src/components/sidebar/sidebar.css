@@ -2,9 +2,11 @@
     width: 15%;
     height: 100vh;
     background-color: #1D2B64;
+    position: -webkit-sticky;
     position: sticky;
     overflow: visible;
-    z-index: 2;
+    z-index: 1020;
+    top: 0;
   }
 
   .logo{
