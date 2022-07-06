@@ -2,14 +2,15 @@ import { Component } from "react";
 import FinalStep from "./FinalStep";
 import Step1 from "./Step1";
 import Step2 from "./Step2";
+import RealFinalStep from "./RealFinalStep";
 
 export default class Signup extends Component{
     state = {
         step: 1,
         Country: '',
         EducationBackround: '',
-        Note_Average: '',
-        Exam_Result: '',
+        Note_Average: '0',
+        Exam_Result: '0',
         University: '',
         Course: ''
       };
@@ -66,6 +67,15 @@ export default class Signup extends Component{
                 values={values}
               />
             );
+          case 4:
+              return (
+                <RealFinalStep
+                  nextStep={this.nextStep}
+                  prevStep={this.prevStep}
+                  handleChange={this.handleChange}
+                  values={values}
+                />
+              );
           default:
             (console.log('This is a multi-step form built with React.'))
         }

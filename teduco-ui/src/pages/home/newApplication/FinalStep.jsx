@@ -14,18 +14,24 @@ export class FinalStep extends Component {
         return(
         <form>
             <div className="choice">
-            <label>University</label>
-            <input type="text"  defaultValue={values.University} 
+            <label>Passport Copy</label>
+            <input type="file"  
             onChange={handleChange('University')} 
-            placeholder="Technical University of Munich"></input>
+            ></input>
             </div>
 
             <div className="choice">
-            <label>Course</label>
-            <input type="text"  
-            defaultValue={values.Course} 
-            onChange={handleChange('Course')} 
-            placeholder="Bachelor Informatik"></input>
+            <label>Latest Transcript</label>
+            <input type="file"  
+            onChange={handleChange('University')} 
+            ></input>
+            </div>
+
+            <div className="choice">
+            <label>Motivation Letter</label>
+            <input type="file"  
+            onChange={handleChange('University')} 
+            ></input>
             </div>
 
         <p  onClick={this.back} className="next">Back</p>
